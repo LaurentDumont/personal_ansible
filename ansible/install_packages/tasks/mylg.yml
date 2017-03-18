@@ -1,0 +1,5 @@
+---
+
+- name: Install the network tool "mylg"
+  package:
+    deb: http://mylg.io/dl/linux/mylg.amd64.deb
