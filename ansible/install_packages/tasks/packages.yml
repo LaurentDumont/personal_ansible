@@ -33,3 +33,10 @@
     - multitail
     - glances
     - ncdu
+    - guake=0.8.7-1
+    - keepass2
+    - unzip
+    - rar
+    - wireshark
+    - terminator
+    - comix
