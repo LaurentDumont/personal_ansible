@@ -41,7 +41,4 @@
     - network-manager-openvpn
     - network-manager-openvpn-gnome
     - xfonts-terminus
-
-- name: Install functionning version of Guake
-  apt:
-    deb: http://snapshot.debian.org/archive/debian/20160823T103139Z/pool/main/g/guake/guake_0.8.7-1_amd64.deb
+    - locate
