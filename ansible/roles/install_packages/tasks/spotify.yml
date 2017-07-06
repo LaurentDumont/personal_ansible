@@ -1,0 +1,21 @@
+---
+
+- name: Add the GPG key.
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: BBEBDCB318AD50EC6865090613B00F1FD2C19886
+
+- name: Add the Spotify repo
+  apt_repository:
+    repo: deb http://repository.spotify.com stable non-free
+    state: present
+    filename: spotify.list
+
+- name: Add the libssl1.0.0 (Not part of Debian 9)
+  apt:
+    deb: http://http.us.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u6_amd64.deb
+
+- name: Install the Spotify package.
+  package:
+    name: spotify-client
+    state: latest

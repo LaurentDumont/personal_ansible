@@ -2,3 +2,5 @@
 
 - include: packages.yml
 - include: mylg.yml
+- include: atom.yml
+- include: spotify.yml
